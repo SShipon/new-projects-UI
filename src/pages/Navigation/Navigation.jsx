@@ -20,7 +20,7 @@ export default function Navigation() {
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-white">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ export default function Navigation() {
             {navItems}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">UI Design</a>
+        <a className="btn btn-ghost text-xl">Logoipsum</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
