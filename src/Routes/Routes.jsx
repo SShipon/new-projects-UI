@@ -3,6 +3,7 @@ import Main from "../Main/Main";
 import NotFound from "../pages/NotFound/NotFound";
 import Dashboard from "../components/Dashboard/Dashboard";
 import Overview from "../components/Overview/Overview";
+import Home from "../components/Home/Home";
 
 export const router = createBrowserRouter([
     {
@@ -10,6 +11,10 @@ export const router = createBrowserRouter([
       element: <Main></Main>,
       errorElement: <NotFound />,
       children: [
+        {
+          path: '/',
+          Component: Home
+        },
         
         {
           path: 'dashboard',
