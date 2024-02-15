@@ -52,7 +52,7 @@ export default function Navigation() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItems}</ul>
       </div>
-      <div className="navbar-end">
+      <div className="navbar-end flex gap-5">
         <div className="nav-settings">
           <i class="fa-solid fa-gear"></i>
         </div>
@@ -65,7 +65,7 @@ export default function Navigation() {
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
-            <div className="w-10 rounded-full">
+            <div className="w-12 rounded-full">
               <img
                 alt="Tailwind CSS Navbar component"
                 src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"

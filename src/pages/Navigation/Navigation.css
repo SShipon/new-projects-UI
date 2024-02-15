@@ -1,9 +1,15 @@
-.nav-settings{
-    background-color: rgb(229, 239, 241);
+.nav-settings,.nav-notification{
+    background-color: rgb(234, 243, 245);
     width: 45px;
     height: 45px;
     border-radius: 50%;
     line-height: 44px;
     text-align: center;
     font-size: 25px;
+}
+.nav-settings{
+    color: rgb(104, 201, 204);
+}
+.nav-notification{
+color: rgb(236, 20, 56);
 }
