@@ -1,0 +1,9 @@
+.nav-settings{
+    background-color: rgb(229, 239, 241);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    line-height: 44px;
+    text-align: center;
+    font-size: 25px;
+}
