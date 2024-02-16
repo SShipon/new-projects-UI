@@ -23,7 +23,7 @@ const ContentTop = () => {
             </button>
             <button className="notification-btn content-top-btn">
                 <img src={ personsImgs.mask } />
-                
+
                 <span className="notification-btn-dot"></span>
             </button>
         </div>
