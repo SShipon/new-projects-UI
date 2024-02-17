@@ -1,15 +1,23 @@
-import React from 'react'
+import './App.css';
+import Sidebar from './layout/Sidebar/Sidebar';
+import Content from './layout/Content/Content';
+import { Route, Routes } from 'react-router-dom';
+import Overview from './components/Overview/Overview';
+import Monitors from './components/Monitors/Monitors';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <button className="btn">Button</button>
-      <button className="btn btn-neutral">Neutral</button>
-      <button className="btn btn-primary">Primary</button>
-      <button className="btn btn-secondary">Secondary</button>
-      <button className="btn btn-accent">Accent</button>
-      <button className="btn btn-ghost">Ghost</button>
-      <button className="btn btn-link">Link</button>
-    </div>
+    <>
+      <div className='app'>
+        <Sidebar />
+        <Routes>
+          <Route path='/' Component={Content} />
+          <Route path='/overview' Component={Overview} />
+          <Route path='/monitors' Component={Monitors} />
+        </Routes>
+      </div>
+    </>
   )
 }
+
+export default App

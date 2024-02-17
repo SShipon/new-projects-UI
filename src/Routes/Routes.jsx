@@ -2,8 +2,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Main from "../Main/Main";
 import NotFound from "../pages/NotFound/NotFound";
 import Dashboard from "../components/Dashboard/Dashboard";
-import Overview from "../components/Overview/Overview";
-import Home from "../components/Home/Home";
+// import Overview from "../components/Overview/Overview";
+import Home from "../components/Overview/Overview";
 
 export const router = createBrowserRouter([
     {
@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
           children: [
             {
               path:'overview',
-              element:<Overview />
+              Component: Home
             },
           ]
         },
