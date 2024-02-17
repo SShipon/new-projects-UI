@@ -5,14 +5,11 @@ import "./Sidebar.css";
 import { useContext } from 'react';
 import { SidebarContext } from '../../context/SidebarContext';
 import EachNavLink from './EachNavLink';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const [sidebarClass, setSidebarClass] = useState("");
   const { isSidebarOpen } = useContext(SidebarContext);
-  const navigate = useNavigate();
-
-  // console.log(navigate('/home'));
 
   useEffect(() => {
     if(isSidebarOpen){
