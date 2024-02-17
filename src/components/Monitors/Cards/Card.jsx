@@ -1,13 +1,14 @@
 import React from "react";
-import Monitors from "../Monitors/Monitors";
-import  icons6 from '../../assets/Monitor/info-card-2.png'
+import Monitors from "../Monitors";
+import  icons6 from '../../../assets/Monitor/info-card-2.png'
+import DataMonitorUi from "../DataMonitorUi/DataMonitorUi";
 export default function Card() {
   return (
     <div className="lg:flex">
      <div class="lg:flex lg:flex-row">
   
     <div class="lg:basis-1/9">
-      <Monitors></Monitors>
+       <DataMonitorUi />
     </div>
     <div class="lg:basis-1/4">
       <div className="flex my-8 justify-center items-center ">

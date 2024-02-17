@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Monitor({ monitor, style, titleStyle }) {
+export default function DataMonitor({ monitor, style, titleStyle }) {
   console.log(style);
 
   console.log(monitor);

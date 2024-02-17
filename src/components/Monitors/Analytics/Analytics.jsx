@@ -1,10 +1,10 @@
 import React from 'react'
-import china from '../../assets/logo/image 101 (1).png';
-import canada from '../../assets/logo/image 94.png';
-import africa from '../../assets/logo/image 102.png'
-import more from '../../assets/logo/+ MORE.png'
+import china from '../../../assets/logo/image 101 (1).png';
+import canada from '../../../assets/logo/image 94.png';
+import africa from '../../../assets/logo/image 102.png'
+import more from '../../../assets/logo/+ MORE.png'
 import CreateMonitor from '../CreateMonitor/CreateMonitor';
-export default function WebMonitors() {
+export default function Analytics() {
   return (
     <div className='ml-10 shadow p-10'>
       <div className='my-4'>
