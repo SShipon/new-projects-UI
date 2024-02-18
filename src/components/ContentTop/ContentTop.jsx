@@ -1,6 +1,5 @@
 import { SidebarContext } from "../../context/SidebarContext";
 import { iconsImgs } from "../../utils/images";
-import { personsImgs } from "../../utils/images";
 import "./ContentTop.css";
 import { useContext } from "react";
 import notification from '../../assets/Home/002-notification-1.png';

@@ -63,7 +63,7 @@ const Sidebar = () => {
       </div>
 
       <nav className="navigation">
-        <span className='text-red-500'>UPTIME</span>
+        <span className=''>UPTIME</span>
         {items}
       </nav>
     </div>

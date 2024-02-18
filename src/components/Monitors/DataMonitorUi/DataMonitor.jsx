@@ -10,7 +10,7 @@ export default function DataMonitor({ monitor, style, titleStyle }) {
       <div className="flex justify-center">
         <div>
           <p className="font-bold text-sx">{name}</p>
-          <h4 style={titleStyle} className="mr-2 font-extrabold my-4">
+          <h4 style={titleStyle} className="mr-2 font-extrabold text-2xl my-4">
             {title}
           </h4>
           <img className="" src={img} alt="" />
