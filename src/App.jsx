@@ -4,6 +4,7 @@ import Content from './layout/Content/Content';
 import { Route, Routes } from 'react-router-dom';
 import Overview from './components/Overview/Overview';
 import Monitors from './components/Monitors/Monitors';
+import Dropdown from './components/Dropdown/Dropdown';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Route path='/' Component={Content} />
           <Route path='/overview' Component={Overview} />
           <Route path='/monitors' Component={Monitors} />
+          <Route path='/dropdown' Component={Dropdown} />
         </Routes>
       </div>
     </>

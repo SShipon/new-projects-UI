@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   const [sidebarClass, setSidebarClass] = useState("");
   const { isSidebarOpen } = useContext(SidebarContext);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     if(isSidebarOpen){
@@ -19,11 +20,17 @@ const Sidebar = () => {
     }
   }, [isSidebarOpen]);
 
+  const handleDropDown = () => {
+    setIsOpen(prev => !prev);
+  }
+
+  const subtitles = ['Web', 'Pulses', 'SSL', 'Domain', 'PageSpeed'];
+
   const items = (
     <ul className="nav-list">
       {
         navigationLinks.map((navLink, index) => {
-          if (index == 0) {
+          if (index === 0) {
             return (
               <Link to='/overview'>
                 <EachNavLink
@@ -32,12 +39,15 @@ const Sidebar = () => {
                 />
               </Link>
             )
-          } else if(index == 1) {
+          } else if(index === 1) {
             return (
               <Link to='/monitors'>
                 <EachNavLink
                   key = {navLink.id}
                   navLink={navLink}
+                  subtitles={subtitles}
+                  isOpen={isOpen}
+                  handleDropDown={handleDropDown}
                 />
               </Link>
             )

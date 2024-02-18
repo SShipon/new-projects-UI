@@ -2,7 +2,7 @@ import { iconsImgs } from "../utils/images";
 import { personsImgs } from "../utils/images";
 export const navigationLinks = [
     { id: 1, title: 'Overview', image: iconsImgs.home },
-    { id: 2, title: 'Monitors', image: iconsImgs.budget },
+    { id: 2, title: 'Monitors', image: iconsImgs.budget},
     { id: 3, title: 'Incidents', image: iconsImgs.plane },
     { id: 4, title: 'StatusPage', image: iconsImgs.wallet },
     { id: 5, title: 'Reporting', image: iconsImgs.bills },
